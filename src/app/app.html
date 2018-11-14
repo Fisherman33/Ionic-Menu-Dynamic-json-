@@ -1,0 +1,86 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- <div menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+    {{p.title}}
+  </div> -->
+
+  <ion-content>
+
+    <!-- Premiere boucle icones -->
+    <ion-grid *ngFor="let M of _menus">
+
+      <ion-row>
+
+        <ion-col col-xl-2 col-lg-3 col-md-3 col-sm-4>
+
+
+
+          <button *ngIf="M.child.length" (click)="clickM(M)" ion-button clear>
+            <ion-icon [name]="M.icon" padding item-start></ion-icon>
+            {{M.name}}
+            <ion-icon ios="ios-arrow-dropdown" md="md-arrow-dropdown" padding></ion-icon>
+          </button>
+
+          <button *ngIf="!M.child.length" menuClose (click)="clickM(M)" ion-button clear>
+            <ion-icon [name]="M.icon" padding item-start></ion-icon>
+            {{M.name}}
+          </button>
+
+          <div *ngIf="M.open">
+
+            <!-- si on a un child -->
+            <div *ngIf="M.child.length">
+
+              <!-- deuxieme boucle -->
+              <div *ngFor="let N of M.child">
+
+                <button (click)="clickM(N)" ion-button clear *ngIf="N.child.length">
+
+                  <ion-icon [name]="N.icon" padding item-start></ion-icon>
+                  {{N.name}}
+                  <ion-icon ios="ios-arrow-dropdown" md="md-arrow-dropdown" padding></ion-icon>
+
+                </button>
+
+                <button (click)="clickM(N)" *ngIf="!N.child.length" menuClose ion-button clear>
+
+                  <ion-icon [name]="N.icon" padding item-start></ion-icon> {{N.name}}
+
+                </button>
+
+                <div *ngIf="N.child.length">
+
+                  <!-- derniere boucle -->
+                  <div *ngIf="N.open">
+
+                    <button ion-button clear menuClose *ngFor="let O of N.child">
+                      <ion-icon [name]="O.icon" padding item-start></ion-icon> {{O.name}}
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </ion-col>
+
+      </ion-row>
+
+    </ion-grid>
+
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

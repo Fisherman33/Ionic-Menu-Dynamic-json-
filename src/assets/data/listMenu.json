@@ -1,0 +1,181 @@
+[
+    {
+        "name": "Tableau de Bord",
+        "icon": "boat",
+        "child": [
+            {
+                "name": "synthese",
+                "icon": "paper",
+                "child": []
+            },
+            {
+                "name": "stats",
+                "icon": "stats",
+                "child": [
+                    {
+                        "name": "parametres",
+                        "icon": "settings",
+                        "child": [
+                            {
+                                "name": "Général",
+                                "icon": "options",
+                                "child": []
+                            },
+                            {
+                                "name": "Avancée",
+                                "icon": "warning",
+                                "child": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "parametres",
+                "icon": "settings",
+                "child": [
+                    {
+                        "name": "Général",
+                        "icon": "options",
+                        "child": []
+                    },
+                    {
+                        "name": "Avancée",
+                        "icon": "warning",
+                        "child": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Utilisateur",
+        "icon": "contacts",
+        "child": [
+            {
+                "name": "synthese",
+                "icon": "paper",
+                "child": []
+            },
+            {
+                "name": "parametres",
+                "icon": "settings",
+                "child": [
+                    {
+                        "name": "Général",
+                        "icon": "options",
+                        "child": []
+                    },
+                    {
+                        "name": "Avancée",
+                        "icon": "warning",
+                        "child": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Analytique",
+        "icon": "podium",
+        "child": [
+            {
+                "name": "synthese",
+                "icon": "paper",
+                "child": []
+            },
+            {
+                "name": "parametres",
+                "icon": "settings",
+                "child": [
+                    {
+                        "name": "Général",
+                        "icon": "options",
+                        "child": []
+                    },
+                    {
+                        "name": "Avancée",
+                        "icon": "warning",
+                        "child": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Android",
+        "icon": "logo-android",
+        "child": [
+            {
+                "name": "synthese",
+                "icon": "paper",
+                "child": []
+            },
+            {
+                "name": "parametres",
+                "icon": "settings",
+                "child": [
+                    {
+                        "name": "Général",
+                        "icon": "options",
+                        "child": []
+                    },
+                    {
+                        "name": "Avancée",
+                        "icon": "warning",
+                        "child": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Apple",
+        "icon": "logo-apple",
+        "child": [
+            {
+                "name": "synthese",
+                "icon": "paper",
+                "child": []
+            },
+            {
+                "name": "parametres",
+                "icon": "settings",
+                "child": [
+                    {
+                        "name": "Général",
+                        "icon": "options",
+                        "child": []
+                    },
+                    {
+                        "name": "Avancée",
+                        "icon": "warning",
+                        "child": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Messages",
+        "icon": "mail",
+        "child": []
+    },
+    {
+        "name": "Soldes",
+        "icon": "card",
+        "child": []
+    },
+    {
+        "name": "Archive",
+        "icon": "archive",
+        "child": []
+    },
+    {
+        "name": "Télécharger",
+        "icon": "cloud-upload",
+        "child": []
+    }
+    
+
+]
